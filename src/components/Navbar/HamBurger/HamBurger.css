@@ -1,0 +1,114 @@
+.ham_container,
+#ham_label {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+#ham_label span:nth-child(1),
+#ham_label span:nth-child(2),
+#ham_label span:nth-child(3) {
+    width: 70%;
+    height: .2rem;
+    background-color: #ffffff;
+    margin: 2px 40px 2px 2px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 0px #ffffff;
+    transition: 0.3s transform ease-in-out;
+}
+
+.ham_option {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    background-color: #242d51c9;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ham_option ul {
+    list-style: none;
+    flex-direction: column;
+}
+
+.ham_option li {
+    margin: 10%;
+}
+
+#ham:checked~.ham_option {
+    display: flex;
+    opacity: 1;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ham_btn {
+    background-color: #24f9f9;
+    border: none;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #000000;
+    box-shadow: 0 0.2rem #ffffff;
+    cursor: pointer;
+}
+
+.ham_btn:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.ham_btn:hover:not(:disabled) {
+    background: #24f9f9;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+#ham:checked~#ham_label span:nth-child(1) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#ham:checked~#ham_label span:nth-child(2),
+#ham:checked~#ham_label span:nth-child(3) {
+    width: 8%;
+    position: absolute;
+    background-color: #24f9f9;
+    box-shadow: 0 2px 10px 0px #24f9f9;
+    z-index: 1;
+}
+
+#ham:checked~#ham_label span:nth-child(2) {
+    transform: rotateZ(45deg);
+}
+
+#ham:checked~#ham_label span:nth-child(3) {
+    transform: rotateZ(-45deg);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
