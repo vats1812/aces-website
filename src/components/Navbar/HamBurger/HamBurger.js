@@ -32,14 +32,21 @@ function HamBurger() {
             <li className="center">
               <Link to="/about">
                 <button className="ham_btn" onClick={handleUncheck}>
-                  About
+                  About Us
                 </button>
               </Link>
             </li>
             <li className="center">
-              <Link to="/products">
+              <Link to="/team">
                 <button className="ham_btn" onClick={handleUncheck}>
-                  Products
+                  Our Team
+                </button>
+              </Link>
+            </li>
+            <li className="center">
+              <Link to="/event">
+                <button className="ham_btn" onClick={handleUncheck}>
+                  Events
                 </button>
               </Link>
             </li>

@@ -1,0 +1,81 @@
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap");
+.contact {
+    margin-top: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.contact__form {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.contact__form>* {
+    margin: 1rem 0;
+}
+
+.contact__form>*>input,
+.contact__form>*>textarea {
+    padding: 0.6rem 0.875rem;
+    border: none;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+    width: 80%;
+    outline: none;
+    font-family: System-ui, sans-serif;
+}
+
+.contact__form>*>h4 {
+    color: #264653;
+    margin: 0.5rem 0;
+    font-family: "Lora", sans-serif;
+}
+
+#message {
+    resize: none;
+    line-height: 150%;
+}
+
+.btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #6b9fed;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #264653;
+}
+
+.socials {
+    margin: 2rem auto;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    color: #6b9fed;
+    align-items: center;
+}
+
+.socials>i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.socials>i:hover {
+    color: #264653;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__form {
+        width: 100%;
+    }
+}

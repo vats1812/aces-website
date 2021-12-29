@@ -16,7 +16,7 @@ function Navbar() {
         <Link to="/">
           <div className="nav_logo">
             <img src={Logo} alt="Logo" width={55} height={55} />
-            <span>ACES</span>
+            <span> ACES </span>
           </div>
         </Link>
         <div className="nav_option">
@@ -36,17 +36,27 @@ function Navbar() {
             }
             to="/about"
           >
-            <div> About </div>
+            <div> About Us </div>
           </Link>
           <Link
             className={
-              splitLocation[1] === "products"
+              splitLocation[1] === "team"
                 ? "nav_titles active_nav"
                 : "nav_titles"
             }
-            to="/products"
+            to="/team"
           >
-            <div> Products </div>
+            <div> Our Team </div>
+          </Link>
+          <Link
+            className={
+              splitLocation[1] === "event"
+                ? "nav_titles active_nav"
+                : "nav_titles"
+            }
+            to="/event"
+          >
+            <div> Events </div>
           </Link>
           <Link
             className={

@@ -3,12 +3,13 @@
     height: 8%;
     position: fixed;
     top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     background-color: #242d51ea;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 2px 10px 2px #a1a7c8;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .nav_container a {
@@ -27,6 +28,7 @@
     font-size: 2rem;
     margin-left: 5%;
     color: #24f9f9;
+    font-family: 'Gugi', cursive;
     text-shadow: 0 0.1rem 0.5rem #24f9f9;
 }
 
@@ -37,12 +39,13 @@
 }
 
 .nav_titles {
-    margin: 2%;
-    width: 10%;
+    margin: 1%;
+    width: 12%;
     text-decoration: none;
     color: #ffffff;
     font-size: 1.4rem;
-    padding: 0.5%;
+    font-family: 'Lora', serif;
+    padding: 0.2%;
     text-align: center;
     border-radius: 15px;
     cursor: pointer;
@@ -50,14 +53,14 @@
 
 .nav_titles:hover {
     color: #000000;
-    background-color: #24f9f9;
+    background-color: #24f9f9f5;
     box-shadow: 0 2px 10px 0px gray;
     text-shadow: 0 0.1rem #bcb4b4;
 }
 
 .active_nav {
     color: #000000;
-    background-color: #24f9f9;
+    background-color: #24f9f9f5;
     box-shadow: 0 2px 10px 0px gray;
     text-shadow: 0 0.1rem #bcb4b4;
 }
@@ -66,7 +69,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .nav_logo {
         margin-left: 10%;
     }
