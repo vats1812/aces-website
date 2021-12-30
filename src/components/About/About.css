@@ -45,6 +45,45 @@
     color: #ffffff;
 }
 
+.abt_faculty {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faculty_body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1,
+.f2 {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faculty_img {
+    margin-top: 20px;
+}
+
+.faculty_img img {
+    width: 200px;
+    height: 200px;
+}
+
+.faculty_name {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+}
+
 @media only screen and (max-width: 768px) {
     .abt_cont {
         margin-bottom: 10%;
@@ -73,5 +112,12 @@
     .abt_content3 h2,
     .abt_content4 h2 {
         text-align: center;
+    }
+    .abt_faculty {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .faculty_body {
+        flex-direction: column;
     }
 }

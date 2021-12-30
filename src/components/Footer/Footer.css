@@ -105,6 +105,13 @@ ul>li+li {
     color: #264653;
 }
 
+.footer_built {
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
     .footer {
         padding: 0 1.2rem;

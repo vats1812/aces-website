@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import nirma from "../../assets/nirma.png";
 import aces from "../../assets/logo.png";
 import mission from "../../assets/mission.jpg";
 import vision from "../../assets/vision.jpg";
+import faculty1 from "../../assets/F1.jpg";
+import faculty2 from "../../assets/F2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./About.css";
+
 function About() {
+  useEffect(() => {
+    AOS.init({ easing: "ease-in-out", mirror: true });
+  }, []);
   return (
     <div>
       <div className="abt_cont">
         <div className="abt_mainhead">
           <h1>About Us</h1>
         </div>
-        <div className="abt_body1">
+        <div className="abt_body1" data-aos="flip-up">
           <div className="abt_img">
             <img src={nirma} alt="Nirma" />
           </div>
@@ -37,7 +45,24 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="abt_body2">
+        <div className="abt_faculty" data-aos="flip-down">
+          <h1>Faculty Advisors</h1>
+          <div className="faculty_body">
+            <div className="f1">
+              <div className="faculty_img">
+                <img src={faculty1} alt="faculty" />
+              </div>
+              <div className="faculty_name">Pooja Shah</div>
+            </div>
+            <div className="f2">
+              <div className="faculty_img">
+                <img src={faculty2} alt="faculty" />
+              </div>
+              <div className="faculty_name">Sapan Sir</div>
+            </div>
+          </div>
+        </div>
+        <div className="abt_body2" data-aos="flip-up">
           <div className="abt_img">
             <img src={aces} alt="ACES" />
           </div>
@@ -54,25 +79,39 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="abt_body3">
+        <div className="abt_body3" data-aos="flip-down">
           <div className="abt_img">
             <img src={mission} alt="ACES" />
           </div>
           <div className="abt_content3">
             <h2>Mission</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis omnis sapiente commodi ratione officia totam quas voluptatibus accusantium ut sunt delectus, tempora architecto molestiae repellendus rerum ab sequi? Consequatur nam pariatur impedit iusto, saepe culpa, explicabo facere est doloremque quis nemo minima tenetur optio similique cum fuga omnis perferendis. Neque tempore rerum voluptatum asperiores voluptate, numquam doloribus laborum distinctio! Vitae!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis omnis sapiente commodi ratione officia totam quas
+              voluptatibus accusantium ut sunt delectus, tempora architecto
+              molestiae repellendus rerum ab sequi? Consequatur nam pariatur
+              impedit iusto, saepe culpa, explicabo facere est doloremque quis
+              nemo minima tenetur optio similique cum fuga omnis perferendis.
+              Neque tempore rerum voluptatum asperiores voluptate, numquam
+              doloribus laborum distinctio! Vitae!
             </p>
           </div>
         </div>
-        <div className="abt_body4">
+        <div className="abt_body4" data-aos="flip-up">
           <div className="abt_img">
             <img src={vision} alt="ACES" />
           </div>
           <div className="abt_content4">
             <h2>Vision</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis omnis sapiente commodi ratione officia totam quas voluptatibus accusantium ut sunt delectus, tempora architecto molestiae repellendus rerum ab sequi? Consequatur nam pariatur impedit iusto, saepe culpa, explicabo facere est doloremque quis nemo minima tenetur optio similique cum fuga omnis perferendis. Neque tempore rerum voluptatum asperiores voluptate, numquam doloribus laborum distinctio! Vitae!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis omnis sapiente commodi ratione officia totam quas
+              voluptatibus accusantium ut sunt delectus, tempora architecto
+              molestiae repellendus rerum ab sequi? Consequatur nam pariatur
+              impedit iusto, saepe culpa, explicabo facere est doloremque quis
+              nemo minima tenetur optio similique cum fuga omnis perferendis.
+              Neque tempore rerum voluptatum asperiores voluptate, numquam
+              doloribus laborum distinctio! Vitae!
             </p>
           </div>
         </div>

@@ -9,11 +9,11 @@ function Home() {
       <section className="egg">
         <div className="section__info">
           <div className="section__content">
-            <h1 className="section__title">Transform your brand</h1>
+            <h1 className="section__title">We are the Future</h1>
             <p className="section__para">
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
+              We create the future. We are association of computer engineering
+              students.We organize various technical and non technical
+              event,workshop,social events etc.
             </p>
           </div>
         </div>
@@ -22,11 +22,12 @@ function Home() {
       <section className="glass">
         <div className="section__info">
           <div className="section__content">
-            <h1 className="section__title">Stand out to the right audience</h1>
+            <h1 className="section__title">Powering Computers</h1>
             <p className="section__para">
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
+              Computer is a part of our nowadays world. More and more we become
+              dependent on computers. So far computers haven't overcame peoples'
+              brains, but in the near future computers will be more intelligent
+              than we could ever dreamed about it.
             </p>
           </div>
         </div>
