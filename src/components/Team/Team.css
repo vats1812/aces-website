@@ -1,5 +1,4 @@
 .team_container {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +33,16 @@
     .team_container {
         flex-direction: column;
     }
+    .team_info {
+        padding: 3%;
+        margin-left: 0;
+    }
     .team_info h1 {
         margin-bottom: 2%;
         text-align: center;
     }
-    .team_info {
-        padding: 3%;
-        margin-left: 0;
+    .team_info img {
+        display: none;
     }
     .card {
         border: none;
@@ -48,7 +50,7 @@
         display: grid;
         grid-template-columns: repeat(2, 0.5fr);
         grid-template-rows: repeat(8, 0.5fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import validator from "validator";
 import emailjs from "emailjs-com";
-
+import contact from "../../assets/contact.svg"
 import "./Contact.css";
 
 function Contact() {
@@ -50,10 +50,13 @@ function Contact() {
   return (
     <>
       <div className="contact">
-        <h1>Contact Us</h1>
+        <div className="contact_img">
+          <img src={contact} alt="contact" />
+        </div>
         <form className="contact__form" ref={forms}>
+          <h1> Contact Us </h1>{" "}
           <div className="name">
-            <h4> Name </h4>
+            <h4> Name </h4>{" "}
             <input
               type="text"
               name="name"
@@ -63,9 +66,9 @@ function Contact() {
               placeholder="Enter your Name"
               required
             />
-          </div>
+          </div>{" "}
           <div className="number">
-            <h4> Phone No. </h4>
+            <h4> Phone No. </h4>{" "}
             <input
               type="tel"
               name="number"
@@ -75,9 +78,9 @@ function Contact() {
               placeholder="Enter Your Number"
               required
             />
-          </div>
+          </div>{" "}
           <div className="email">
-            <h4> Email </h4>
+            <h4> Email </h4>{" "}
             <input
               type="email"
               name="email"
@@ -87,9 +90,9 @@ function Contact() {
               placeholder="Enter Your Email"
               required
             />
-          </div>
+          </div>{" "}
           <div className="message">
-            <h4> Message </h4>
+            <h4> Message </h4>{" "}
             <textarea
               type="text"
               name="message"
@@ -99,20 +102,37 @@ function Contact() {
               placeholder="Enter your Message"
               required
             />
-          </div>
+          </div>{" "}
           <button type="submit" className="btn" onClick={handleClick}>
-            Submit
-          </button>
-        </form>
-      </div>
+            Submit{" "}
+          </button>{" "}
+        </form>{" "}
+      </div>{" "}
       <div>
         <div className="socials">
-          <i className="bx bxl-facebook-circle"> </i>
-          <i className="bx bxl-instagram"> </i>
-          <i className="bx bxl-twitter"> </i>
-          <i className="bx bxl-youtube"> </i>
-        </div>
-      </div>
+          <a
+            href="https://www.facebook.com/aces.itnu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-facebook-circle"> </i>{" "}
+          </a>{" "}
+          <a
+            href="https://www.instagram.com/aces_it_nu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-instagram"> </i>{" "}
+          </a>{" "}
+          <a
+            href="https://www.linkedin.com/company/association-of-computer-engineering-students/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-linkedin"> </i>{" "}
+          </a>{" "}
+        </div>{" "}
+      </div>{" "}
     </>
   );
 }

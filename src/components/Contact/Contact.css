@@ -1,17 +1,19 @@
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"); */
-
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap");
 .contact {
-    margin-top: 80px;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
+}
+
+.contact_img img {
+    width: 150%;
+    height: 150%;
+    position: relative;
 }
 
 .contact__form {
+    margin-left: 15%;
     width: 50%;
     padding-left: 1rem;
 }
@@ -58,23 +60,26 @@
 .socials {
     margin: 2rem auto;
     width: 90%;
-    justify-content: center;
     display: flex;
-    gap: 1rem;
-    color: #6b9fed;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
-.socials>i {
+.socials a i {
+    color: #6b9fed;
     font-size: 2rem;
     cursor: pointer;
 }
 
-.socials>i:hover {
+.socials a i:hover {
     color: #264653;
 }
 
 @media only screen and (max-width: 768px) {
+    .contact_img {
+        display: none;
+    }
     .contact__form {
         width: 100%;
     }

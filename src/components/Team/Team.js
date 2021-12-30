@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card/Card";
 import { Members } from "./Card/Members";
+import teams from "../../assets/team.svg"
 import "./Team.css";
 function Team() {
   return (
@@ -14,6 +15,7 @@ function Team() {
             minus repellendus voluptas illum eum blanditiis? Atque aperiam optio
             quisquam laborum amet dicta quae blanditiis?
           </p>
+          <img src={teams} alt="team" />
         </div>
         <div className="card">
           {Members.map((member) => (

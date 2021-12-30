@@ -15,10 +15,27 @@ function Footer() {
           magni corrupti!
         </p>
         <div className="socials__footer">
-          <i className="bx bxl-facebook-circle"> </i>
-          <i className="bx bxl-instagram"> </i>
-          <i className="bx bxl-twitter"> </i>
-          <i className="bx bxl-youtube"> </i>
+          <a
+            href="https://www.facebook.com/aces.itnu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-facebook-circle"> </i>
+          </a>
+          <a
+            href="https://www.instagram.com/aces_it_nu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-instagram"> </i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/association-of-computer-engineering-students/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-linkedin"> </i>
+          </a>
         </div>
       </div>
       <div className="foo2">

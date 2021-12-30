@@ -4,7 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #24f9f9ab;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6b9fed;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #6b9fedc7;
+}
+
 .app_container {
     width: 100%;
     height: 100%;
+}
+
+.app_body {
+    margin-top: 80px;
 }

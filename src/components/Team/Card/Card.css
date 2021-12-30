@@ -51,14 +51,17 @@
 
 @media only screen and (max-width: 768px) {
     .card_container {
-        width: 180px;
-        height: 180px;
-        background-size: 200px !important;
+        width: 160px;
+        height: 160px;
+        background-size: 160px !important;
+    }
+    .card_container:hover {
+        background-size: 250px !important;
     }
     .card_name,
     .card_desig,
     .card_mail {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
