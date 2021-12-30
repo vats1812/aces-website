@@ -1,0 +1,133 @@
+.event__banner {
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #17171f;
+    height: 32rem;
+    margin-bottom: 3rem;
+}
+
+.event__banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.events {
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+    gap: 1rem;
+    width: 80%;
+}
+
+.events__image {
+    width: 50%;
+    margin-block: 1rem;
+}
+
+.events__image img {
+    height: 250px;
+    width: 70%;
+}
+
+.events__content {
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.events__content p {
+    color: white;
+}
+
+.order-1 {
+    order: -1;
+}
+
+@media (max-width: 768px) {
+    .events {
+        flex-direction: column;
+        margin: 0 2rem;
+        padding: 0.5rem;
+    }
+    .events__content {
+        width: 100%;
+    }
+    .events__image {
+        width: 100%;
+    }
+    .events__image img {
+        height: 100%;
+        width: 100%;
+    }
+    .order-1 {
+        order: 5;
+    }
+}
+
+.photo-grid {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 240px;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+    transition: transform 0.3s ease;
+    margin: 0.5rem 0;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.intro {
+    background-image: linear-gradient( to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    width: 100%;
+    height: 15rem;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    color: #ffffff;
+}
+
+.events__intro {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width: 750px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+    .card-sq-big {
+        grid-row: span 2 / auto;
+        grid-column: span 2 / auto;
+    }
+}

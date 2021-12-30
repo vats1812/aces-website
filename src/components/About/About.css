@@ -1,5 +1,6 @@
 .abt_cont {
     padding: 2%;
+    margin-bottom: 5%;
 }
 
 .abt_cont h1 {
@@ -37,7 +38,17 @@
     font-family: 'Lora', serif;
 }
 
+.abt_content1 p,
+.abt_content2 p,
+.abt_content3 p,
+.abt_content4 p {
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 768px) {
+    .abt_cont {
+        margin-bottom: 10%;
+    }
     .abt_body1,
     .abt_body2,
     .abt_body3,

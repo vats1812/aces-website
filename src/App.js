@@ -5,6 +5,8 @@ import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
+import Event from "./components/Event/Event";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -12,16 +14,14 @@ function App() {
       <Navbar />
       <div className="app_body">
         <Routes>
-          <Route exact path="/team" element={<Team />} />
-        </Routes>
-        <Routes>
-          <Route exact path="/contact" element={<Contact />} />
-        </Routes>
-        <Routes>
-          <Route exact path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </div>
+          <Route exact path="/" element={<Home />} />{" "}
+          <Route exact path="/about" element={<About />} />{" "}
+          <Route exact path="/team" element={<Team />} />{" "}
+          <Route exact path="/event" element={<Event />} />{" "}
+          <Route exact path="/contact" element={<Contact />} />{" "}
+        </Routes>{" "}
+      </div>{" "}
+      <Footer />
     </div>
   );
 }

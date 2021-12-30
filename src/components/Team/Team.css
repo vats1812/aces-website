@@ -17,6 +17,10 @@
     margin-bottom: 3%;
 }
 
+.team_info p {
+    color: #ffffff;
+}
+
 .card {
     border-left: 2px solid #6b9fed;
     margin-left: 5%;

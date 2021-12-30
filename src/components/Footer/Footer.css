@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap");
 h1,
 h2,
 h3 {
@@ -55,6 +54,7 @@ ul>li+li {
 }
 
 .foo1 p {
+    color: white;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -67,7 +67,7 @@ ul>li+li {
 .foo2 li a,
 .foo3 li a,
 .foo4 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
