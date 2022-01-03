@@ -1,0 +1,14 @@
+.object1,
+.object2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.object1 canvas,
+.object2 canvas {
+    width: 100% !important;
+    height: 440px !important;
+}

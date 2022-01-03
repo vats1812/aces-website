@@ -7,10 +7,14 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Event from "./components/Event/Event";
 import Home from "./components/Home/Home";
+import Models from "./components/Models/Models";
 
 function App() {
   return (
     <div className="app_conatiner">
+      <div className="model">
+        <Models/>
+      </div>
       <Navbar />
       <div className="app_body">
         <Routes>

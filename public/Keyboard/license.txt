@@ -1,0 +1,11 @@
+Model Information:
+* title:	Logitech mechanical gaming keyboard
+* source:	https://sketchfab.com/3d-models/logitech-mechanical-gaming-keyboard-c775d45baf854606931584404d7b9109
+* author:	BlackCube (https://sketchfab.com/blackcube4)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Logitech mechanical gaming keyboard" (https://sketchfab.com/3d-models/logitech-mechanical-gaming-keyboard-c775d45baf854606931584404d7b9109) by BlackCube (https://sketchfab.com/blackcube4) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
