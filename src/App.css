@@ -43,3 +43,9 @@ body::-webkit-scrollbar-thumb:hover {
 .app_body {
     margin-top: 80px;
 }
+
+@media only screen and (max-width: 768px) {
+    .model {
+        display: none;
+    }
+}
